@@ -50,7 +50,7 @@ Step 1: Preparation
 
 Step 2: Download && Uncompress
 - Copy the above snapshot URL.
-- Download:  `wget -O geth.tar.lz4  "<paste snapshot URL here>"` . It will take one or two hours to download the snapshot, you can put it in the backgroud by `nohup wget -O geth.tar.gz  "<paste snapshot URL here?" &`
+- Download:  `wget -O geth.tar.lz4  "<paste snapshot URL here>"` . It will take one or two hours to download the snapshot, you can put it in the backgroud by `nohup wget -O geth.tar.gz.lz4 "<paste snapshot URL here?" &`
 
 
 *If you need to speedup download, just use `aria2c`*
@@ -69,7 +69,7 @@ tar -I lz4 xvf geth.tar.lz4
 
 - If you do not need to store the archive for use with other nodes, you may also extract it while downloading to save time and disk space:
 ```
-wget -q -O - <snapshot URL> | tar -I lz4 -xvf -
+wget -q -O geth.tar.lz4 - "<paste snapshot URL here>" | tar -I lz4 -xvf -
 ```
 
 
